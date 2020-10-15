@@ -23,6 +23,7 @@ class DicePage extends StatelessWidget {
         children: [
           Expanded(
             //changed dice 1 to 3
+            //new comment
             child: Image.asset('images/dice3.png'),
           ),
           Expanded(
