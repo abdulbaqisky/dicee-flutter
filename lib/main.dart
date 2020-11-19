@@ -48,10 +48,11 @@ class _DicePageState extends State<DicePage> {
           ),
           Expanded(
             child: FlatButton(
-                child: Image.asset('images/dice$rightDiceNumber.png'),
-                onPressed: () {
-                  changeDiceFace();
-                }),
+              child: Image.asset('images/dice$rightDiceNumber.png'),
+              onPressed: () {
+                changeDiceFace();
+              },
+            ),
           ),
         ],
       ),
