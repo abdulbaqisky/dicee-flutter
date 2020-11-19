@@ -16,19 +16,25 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
+  int leftDiceNumber = 1;
+  int rightDiceNumber = 1;
+
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Row(
         children: [
           Expanded(
-              child: FlatButton(child: Image.asset('images/dice1.png'),
-                onPressed: (){},
-              ),
+            child: FlatButton(
+              child: Image.asset('images/dice$leftDiceNumber.png'),
+              onPressed: () {},
             ),
+          ),
           Expanded(
-              child: FlatButton(child: Image.asset('images/dice2.png'),
-                  onPressed: (){}),),
+            child: FlatButton(
+                child: Image.asset('images/dice$rightDiceNumber.png'),
+                onPressed: () {}),
+          ),
         ],
       ),
     );
