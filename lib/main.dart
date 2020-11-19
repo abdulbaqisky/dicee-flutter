@@ -22,13 +22,16 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            //changed dice 1 to 3
-            //new comment
-            child: Image.asset('images/dice3.png'),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Image.asset('images/dice1.png'),
+            ),
           ),
           Expanded(
-            //changed dice 2 to 4
-              child: Image.asset('images/dice4.png')),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Image.asset('images/dice2.png'),
+              )),
         ],
       ),
     );
